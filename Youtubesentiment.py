@@ -24,7 +24,7 @@ model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 # Initialize YouTube API client
 api_service_name = "youtube"
 api_version = "v3"
-DEVELOPER_KEY = "AIzaSyCBCl7evYnl_HdlxF9AOtG5FUWGPsn3xyk"  # Replace with your YouTube API key
+DEVELOPER_KEY = "your own developer key"  # Replace with your YouTube API key
 youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey=DEVELOPER_KEY)
 
 def get_youtube_comments(video_id, max_results=100):
